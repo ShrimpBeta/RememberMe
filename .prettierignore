@@ -1,0 +1,6 @@
+.eslintrc.json
+jsconfig.json
+next.config.json
+postcss.config.js
+prettier.config.js
+tailwind.config.js
