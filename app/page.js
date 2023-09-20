@@ -75,11 +75,15 @@ const datas = [
 export default function Home() {
    return (
       <React.Fragment>
-         <div className=" flex h-96 w-full items-center justify-center gap-20 bg-blue-400 text-7xl font-bold text-white">
-            <label>梗</label>
-            <label>的</label>
-            <label>世</label>
-            <label>界</label>
+         <div className=" flex h-96 w-full items-center justify-center bg-gradient-to-br from-blue-300 via-yellow-100 to-lime-300 text-7xl font-bold text-white">
+            <div className=" rounded-lg bg-white/10 px-10 py-14 backdrop-blur-md backdrop-brightness-125">
+               <div className="space-x-20 bg-gradient-to-r from-pink-300 to-sky-300 bg-clip-text text-transparent">
+                  <label>梗</label>
+                  <label>的</label>
+                  <label>世</label>
+                  <label>界</label>
+               </div>
+            </div>
          </div>
          <div className=" grid grid-cols-3 gap-10 px-5 pt-10">
             {datas.map((data) => (

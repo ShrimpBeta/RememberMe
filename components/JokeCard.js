@@ -27,7 +27,7 @@ const JokeCard = ({ data }) => {
                   />
                </React.Fragment>
             )}
-            <label>{data.content}</label>
+            <label className=" line-clamp-3">{data.content}</label>
          </div>
       </React.Fragment>
    );
