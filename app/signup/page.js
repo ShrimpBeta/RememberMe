@@ -1,6 +1,11 @@
 import React from "react";
 import UserForm from "@/components/UserForm";
 
+export const metadata = {
+   title: "Sign Up",
+   description: "Sign Up Page",
+};
+
 const signUp = () => {
    return (
       <div

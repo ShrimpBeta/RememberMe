@@ -1,26 +1,29 @@
+"use client";
 import React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 import HomeIcon from "@mui/icons-material/Home";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
+   const pathname = usePathname();
    return (
       // 置顶栏
-      <div className=" sticky top-0 z-40 w-full bg-white/60 backdrop-blur transition-colors duration-500">
-         <div className=" flex h-20 flex-row items-center px-6 text-gray-400">
+      <div className=" sticky top-0 z-40 w-full bg-white/60 backdrop-blur">
+         <div className=" flex h-16 flex-row items-center px-6 text-gray-400">
             {/* Menu键 */}
             <button className="rounded-md p-1 shadow-md hover:bg-blue-50">
                <MenuIcon
                   className=" hover:text-blue-400"
-                  sx={{ fontSize: 40 }}
+                  sx={{ fontSize: 32 }}
                />
             </button>
             <div className="mx-3 p-1">
                <Link href="/">
                   <HomeIcon
-                     className="hover:text-blue-400"
-                     sx={{ fontSize: 40 }}
+                     className="stroke-blue-100 hover:fill-blue-400"
+                     sx={{ fontSize: 36 }}
                   />
                </Link>
             </div>

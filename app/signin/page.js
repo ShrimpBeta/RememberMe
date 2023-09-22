@@ -1,6 +1,11 @@
 import React from "react";
 import UserForm from "@/components/UserForm";
 
+export const metadata = {
+   title: "Sign In",
+   description: "Sign In Page",
+};
+
 const signIn = () => {
    return (
       <div
